@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Topbar.css'
 const TopBar = () => {
   return (
@@ -6,55 +7,45 @@ const TopBar = () => {
 <header>
 <nav className="navbar navbar-expand-md bg-light">
   <div className="container">
-    <a className="navbar-brand" href="#">Navbar</a>
+    <Link className="navbar-brand" href="#">Navbar</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
       <ul className="navbar-nav">
-        <li className="nav-item mx-4">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+        <li className="nav-item mx-2">
+          <Link className="nav-link active" aria-current="page" href="#">Home</Link>
         </li>
-        <li className="nav-item dropdown mx-4">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li className="nav-item dropdown mx-2">
+          <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Doctor
-          </a>
+          </Link>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Doctor Register</a></li>
-            <li><a className="dropdown-item" href="#">Doctor List</a></li>
+            <li><Link className="dropdown-item" href="#">Doctor Register</Link></li>
+            <li><Link className="dropdown-item" href="#">Doctor List</Link></li>
             
           </ul>
         </li>
-        <li className="nav-item dropdown mx-4">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li className="nav-item dropdown mx-2">
+          <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Patient
-          </a>
+          </Link>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Patient Register</a></li>
-            <li><a className="dropdown-item" href="#">Patient Logining</a></li>
+            <li><Link className="dropdown-item" href="#">Patient Register</Link></li>
+            <li><Link className="dropdown-item" href="#">Patient Logining</Link></li>
             
           </ul>
         </li>
         <li className="nav-item mx-4">
-          <a className="nav-link active" aria-current="page" href="#">About</a>
+          <Link className="nav-link active" aria-current="page" href="#">About</Link>
         </li>
         <li className="nav-item mx-4">
-          <a className="nav-link active" aria-current="page" href="#">FeedBack</a>
+          <Link className="nav-link active" aria-current="page" href="#">FeedBack</Link>
         </li>
 
         <li className="nav-item mx-4">
-          <a className="nav-link active" aria-current="page" href="#">Contact</a>
+          <Link className="nav-link active" aria-current="page" href="#">Contact</Link>
         </li>
-        {/* <li className="nav-item dropdown mx-4">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            
-          </ul>
-        </li> */}
       </ul>
     </div>
   </div>

@@ -21,8 +21,8 @@ const TopBar = () => {
             Doctor
           </Link>
           <ul className="dropdown-menu">
-            <li><Link className="dropdown-item" href="#">Doctor Register</Link></li>
-            <li><Link className="dropdown-item" href="#">Doctor List</Link></li>
+            <li><Link className="dropdown-item" href="#">Register</Link></li>
+            <li><Link className="dropdown-item" href="#">List</Link></li>
             
           </ul>
         </li>
@@ -31,8 +31,8 @@ const TopBar = () => {
             Patient
           </Link>
           <ul className="dropdown-menu">
-            <li><Link className="dropdown-item" href="#">Patient Register</Link></li>
-            <li><Link className="dropdown-item" href="#">Patient Logining</Link></li>
+            <li><Link className="dropdown-item" href="#">Register</Link></li>
+            <li><Link className="dropdown-item" href="#">Login</Link></li>
             
           </ul>
         </li>

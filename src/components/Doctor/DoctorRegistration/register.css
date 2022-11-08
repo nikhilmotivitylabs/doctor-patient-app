@@ -16,5 +16,5 @@
 }
 .Rightside{
   background: rgb(95, 227, 214);
-  min: width 200px; ;
+  min-width: 200px
 }

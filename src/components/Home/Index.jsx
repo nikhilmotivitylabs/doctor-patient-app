@@ -20,7 +20,7 @@ const HomePage = () => {
             Doctor
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Doctor Register</a></li>
+            <li><a className="dropdown-item" href="doctorRegister">Doctor Register</a></li>
             <li><a className="dropdown-item" href="#">Doctor List</a></li>
             
           </ul>

@@ -4,7 +4,6 @@ import './Home.css'
 const HomePage = () => {
   return (
    <>
-  
 
 <section>
     <div className="container-fuild">

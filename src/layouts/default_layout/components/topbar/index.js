@@ -1,38 +1,57 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+import './Topbar.css'
 const TopBar = () => {
   return (
    <>
-           <div className="App">
-              <nav className="navbar navbar-expand-lg navbar-light bg-light ">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="#" color='black'>Max hospital</a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Features</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Pricing</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-          
-            </div>
+
+<header>
+<nav className="navbar navbar-expand-md bg-light">
+  <div className="container">
+    <Link className="navbar-brand" href="#">Navbar</Link>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+      <ul className="navbar-nav">
+        <li className="nav-item mx-2">
+          <Link className="nav-link active" aria-current="page" href="#">Home</Link>
+        </li>
+        <li className="nav-item dropdown mx-2">
+          <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Doctor
+          </Link>
+          <ul className="dropdown-menu">
+            <li><Link className="dropdown-item" href="#">Register</Link></li>
+            <li><Link className="dropdown-item" href="#">List</Link></li>
+            
+          </ul>
+        </li>
+        <li className="nav-item dropdown mx-2">
+          <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Patient
+          </Link>
+          <ul className="dropdown-menu">
+            <li><Link className="dropdown-item" href="#">Register</Link></li>
+            <li><Link className="dropdown-item" href="#">Login</Link></li>
+            
+          </ul>
+        </li>
+        <li className="nav-item mx-4">
+          <Link className="nav-link active" aria-current="page" href="#">About</Link>
+        </li>
+        <li className="nav-item mx-4">
+          <Link className="nav-link active" aria-current="page" href="#">FeedBack</Link>
+        </li>
+
+        <li className="nav-item mx-4">
+          <Link className="nav-link active" aria-current="page" href="#">Contact</Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>  
+</header>
             </>
   )
 }

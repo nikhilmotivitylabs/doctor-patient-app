@@ -1,0 +1,14 @@
+
+.image-down{
+    margin-top: 10px;
+    border-top:2px solid black;
+}
+.sidebar ul{
+    list-style: none;
+}
+
+
+.sidebar li:hover{
+    background-color: black;
+    color: white;
+}

@@ -14,6 +14,7 @@ const App = () => (
         <Route path='/' element={<DefaultLayout/>}>
           <Route index element={<HomePage />} />
           <Route path='doctor' element={<Doctor />} >
+            
           </Route>
           <Route path = 'patient' element={<Patient/>}>
           </Route>

@@ -56,7 +56,7 @@ const Footer = () => {
                 <p>
                   Social Media Networks
                 </p>
-                <div>
+                <div className='socialmediaicons'>
                 <span className="link"  style={{cursor:'pointer'}} > <i className="socialicons bi bi-facebook " style={{padding:'5px',fontSize:'25px'}}></i></span>
                 <span className="link" style={{cursor:'pointer'}}> <i className="socialicons bi bi-google "  style={{padding:'5px',fontSize:'25px'}} ></i></span>
                 <span className="link" style={{cursor:'pointer'}}> <i className="socialicons bi bi-twitter "  style={{padding:'5px',fontSize:'25px'}}></i></span>

@@ -4,7 +4,7 @@ import "./App.css"
 import HomePage from "./components/Home"
 import Doctor from "./components/Doctor"
 import { Routes, Route } from "react-router-dom"
-import Patient from "./components/Patient"
+import PatientLogin from "./components/Patient"
 import DefaultLayout from "./layouts/default_layout"
 
 const App = () => (
@@ -13,9 +13,9 @@ const App = () => (
       <Routes>
         <Route path='/' element={<DefaultLayout/>}>
           <Route index element={<HomePage />} />
-          <Route path='doctor' element={<Doctor />} >
-          </Route>
-          <Route path = 'patient' element={<Patient/>}>
+          <Route path='doctor' element={<Doctor />} />        
+          
+          <Route path = 'patient' element={<PatientLogin/>}>
           </Route>
         </Route>
       </Routes>

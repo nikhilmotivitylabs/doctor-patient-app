@@ -12,7 +12,7 @@ const DefaultLayout = () => {
   
         <Outlet />
   
-        {/* <Footer /> */}
+         <Footer />
   
         {/* <ScrollToTop /> */}
   

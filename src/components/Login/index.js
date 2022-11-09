@@ -1,6 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const login = () => {
+const Login = () => {
+  const navigate = useNavigate()
+  const onLogin = ()=>{
+    navigate("/doctor/dashboard")
+  }
   return (
     <>
        <section className="doc-login">
@@ -36,7 +41,7 @@ const login = () => {
                   />
                 </div>
                <div className="d-grid  col-6 mx-auto mt-5 mb-3">
-               <button type="submit" className="btn btn-primary">
+               <button type="submit" onClick={onLogin} className="btn btn-primary">
                   Login
                 </button>
                </div>
@@ -54,4 +59,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;

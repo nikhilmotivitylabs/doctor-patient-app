@@ -1,65 +1,9 @@
 import React from 'react'
+import './Home.css'
 
 const HomePage = () => {
   return (
    <>
-   <header>
-<nav className="navbar navbar-expand-lg bg-light">
-  <div className="container">
-    <a className="navbar-brand" href="#">Navbar</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
-      <ul className="navbar-nav">
-        <li className="nav-item mx-4">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li className="nav-item dropdown mx-4">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Doctor
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="doctorRegister">Doctor Register</a></li>
-            <li><a className="dropdown-item" href="#">Doctor List</a></li>
-            
-          </ul>
-        </li>
-        <li className="nav-item dropdown mx-4">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Patient
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Patient Register</a></li>
-            <li><a className="dropdown-item" href="#">Patient Logining</a></li>
-            
-          </ul>
-        </li>
-        <li className="nav-item mx-4">
-          <a className="nav-link active" aria-current="page" href="#">About</a>
-        </li>
-        <li className="nav-item mx-4">
-          <a className="nav-link active" aria-current="page" href="#">FeedBack</a>
-        </li>
-
-        <li className="nav-item mx-4">
-          <a className="nav-link active" aria-current="page" href="#">Contact</a>
-        </li>
-        {/* <li className="nav-item dropdown mx-4">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            
-          </ul>
-        </li> */}
-      </ul>
-    </div>
-  </div>
-</nav>
-<div>
 
 <section>
     <div className="container-fuild">
@@ -105,22 +49,13 @@ const HomePage = () => {
       </div>
     </div>
   </div>
-  {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button> */}
+ 
 </div>
     </div>
 </section>
 
     
-</div>
-  
-</header>
+
    
    
    </>

@@ -4,7 +4,7 @@ import "./App.css"
 import HomePage from "./components/Home"
 import Doctor from "./components/Doctor"
 import { Routes, Route } from "react-router-dom"
-import Patient from "./components/Patient"
+import PatientLogin from "./components/Patient"
 import DefaultLayout from "./layouts/default_layout"
 import DoctorRegsitration from "./components/Doctor/DoctorRegistration"
 
@@ -14,10 +14,6 @@ const App = () => (
       <Routes>
         <Route path='/' element={<DefaultLayout/>}>
           <Route index element={<HomePage />} />
-          <Route path='doctor' element={<Doctor />} >
-            <Route path='doctorRegister' element={<DoctorRegsitration />} />
-          </Route>
-          <Route path = 'patient' element={<Patient/>}>
           </Route>
         </Route>
       </Routes>

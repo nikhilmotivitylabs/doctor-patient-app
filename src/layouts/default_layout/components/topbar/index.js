@@ -15,37 +15,10 @@ const TopBar = () => {
     <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
       <ul className="navbar-nav">
         <li className="nav-item mx-2">
-          <Link className="nav-link active" aria-current="page" href="#">Home</Link>
+          <Link className="nav-link active" aria-current="page" to='/'>Home</Link>
         </li>
-        <li className="nav-item dropdown mx-2">
-          <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Doctor
-          </Link>
-          <ul className="dropdown-menu">
-            <li><Link className="dropdown-item" href="#">Register</Link></li>
-            <li><Link className="dropdown-item" href="#">List</Link></li>
-            
-          </ul>
-        </li>
-        <li className="nav-item dropdown mx-2">
-          <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Patient
-          </Link>
-          <ul className="dropdown-menu">
-            <li><Link className="dropdown-item" href="#">Register</Link></li>
-            <li><Link className="dropdown-item" href="#">Login</Link></li>
-            
-          </ul>
-        </li>
-        <li className="nav-item mx-4">
-          <Link className="nav-link active" aria-current="page" href="#">About</Link>
-        </li>
-        <li className="nav-item mx-4">
-          <Link className="nav-link active" aria-current="page" href="#">FeedBack</Link>
-        </li>
-
-        <li className="nav-item mx-4">
-          <Link className="nav-link active" aria-current="page" href="#">Contact</Link>
+         <li className="nav-item mx-4">
+          <Link className="nav-link active" aria-current="page" to='/login'>Login</Link>
         </li>
       </ul>
     </div>

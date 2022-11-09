@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import App from './App';
 import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
-import {BrowserRouter, HashRouter } from 'react-router-dom';
+import {BrowserRouter } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

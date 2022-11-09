@@ -6,16 +6,10 @@ import Footer from "./components/footer";
 const DefaultLayout = () => {
 
     return (
-  
       <>
-  
         <TopBar />
-  
         <Outlet />
-    <Footer>
-  
-        {/* <ScrollToTop /> */}
-  
+        <Footer/>
       </>
   
     )

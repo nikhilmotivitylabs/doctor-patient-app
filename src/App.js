@@ -11,6 +11,8 @@ import DoctorAppointmentRequest from "./components/Doctor/DoctorAppointmentReque
 import DoctorAppointment from "./components/Doctor/DoctorAppointment"
 
 
+
+
 const App = () => (
   <>
       <Routes>
@@ -26,6 +28,8 @@ const App = () => (
           
         </Route>
       </Routes>
+
+      
   </>
 
 )

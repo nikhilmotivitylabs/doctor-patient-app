@@ -1,8 +1,9 @@
 import React from 'react'
+import PatientLogin from './Login'
 
 const Patient = () => {
   return (
-    <div>Patient</div>
+    <PatientLogin />
   )
 }
 

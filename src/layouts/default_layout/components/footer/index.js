@@ -56,10 +56,12 @@ const Footer = () => {
                 <p>
                   Social Media Networks
                 </p>
-                <span className="link"  style={{cursor:'pointer'}} > <i className="bi bi-facebook " style={{ color: 'blue',padding:'5px',fontSize:'25px'}}></i></span>
-                <span className="link" style={{cursor:'pointer'}}> <i className="bi bi-google "  style={{ color: '#ff8000',padding:'5px',fontSize:'25px'}} ></i></span>
-                <span className="link" style={{cursor:'pointer'}}> <i className="bi bi-twitter "  style={{ color: 'blue',padding:'5px',fontSize:'25px'}}></i></span>
-                <span className="link" style={{cursor:'pointer'}}>  <i className="bi bi-instagram "  style={{ color: '#ff00bf',padding:'5px',fontSize:'25px'}} ></i></span>
+                <div className='socialmediaicons'>
+                <span className="link"  style={{cursor:'pointer'}} > <i className="socialicons bi bi-facebook " style={{padding:'5px',fontSize:'25px'}}></i></span>
+                <span className="link" style={{cursor:'pointer'}}> <i className="socialicons bi bi-google "  style={{padding:'5px',fontSize:'25px'}} ></i></span>
+                <span className="link" style={{cursor:'pointer'}}> <i className="socialicons bi bi-twitter "  style={{padding:'5px',fontSize:'25px'}}></i></span>
+                <span className="link" style={{cursor:'pointer'}}>  <i className="socialicons bi bi-instagram "  style={{padding:'5px',fontSize:'25px'}} ></i></span>
+                </div>
               </div>
             </div>
             <div className=' d-flex justify-content-between py-4 my-4 border-top border-secondary'>

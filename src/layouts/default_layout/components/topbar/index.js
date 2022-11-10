@@ -4,9 +4,9 @@ import "./Topbar.css";
 const TopBar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-md bg-light shadow">
+      <nav className="navbar navbar-expand-md bg-dark shadow">
         <div className="container">
-          <NavLink className="navbar-brand icon" to="/">
+          <NavLink className="navbar-brand icon " to="/">
             <img src="https://motivitylabs.com/wp-content/uploads/elementor/thumbs/logo-prgkor4cuantgaya7ag8ef6zp2tvgjfpld4fltl3e4.png" className="w-10 h-2" alt="icon"/>
           </NavLink>
           <button
@@ -18,7 +18,7 @@ const TopBar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon bg-light"></span>
           </button>
           <div
             className="collapse navbar-collapse"
@@ -30,7 +30,7 @@ const TopBar = () => {
         </li> */}
               <li className="nav-item mx-4">
                 <NavLink
-                  className="nav-link"
+                  className="nav-link text-light"
   
                   to="/login"
                 >

@@ -4,7 +4,7 @@ const ApplyAppointment=()=>{
     return(
         <>
       <div className="apply_appointment mt-4 ">
-        ApplyAppointment
+        Book Appointment
     </div>   
     </> 
     )

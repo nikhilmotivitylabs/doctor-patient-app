@@ -2,12 +2,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Topbar.css";
 const TopBar = () => {
+  
   return (
     <>
       <nav className="navbar navbar-expand-md bg-dark shadow">
         <div className="container">
-          <NavLink className="navbar-brand icon " to="/">
-            <img src="https://motivitylabs.com/wp-content/uploads/elementor/thumbs/logo-prgkor4cuantgaya7ag8ef6zp2tvgjfpld4fltl3e4.png" className="w-10 h-2" alt="icon"/>
+          <NavLink className="navbar-brand " to="/">
+            <img src="https://motivitylabs.com/wp-content/uploads/elementor/thumbs/logo-prgkor4cuantgaya7ag8ef6zp2tvgjfpld4fltl3e4.png" className="" alt="icon"/>
           </NavLink>
           <button
             className="navbar-toggler"

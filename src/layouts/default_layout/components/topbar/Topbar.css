@@ -1,28 +1,23 @@
 
-.icon img{
-
-    height: 5vh;
+.navbar-brand img{
+    height: auto;
+    max-width: 100%;
+    width: 75%;
 }
 @media only screen and (max-width: 768px) {
 
-    .icon img{
+    .navbar-brand img{
         height: 4vh;
-    }
-
-    .navbar-expand-md navbar-toggler {
-        display: none;
     }
 }
 
 @media only screen and (max-width: 600px){
 
-    .icon img{
+    .navbar-brand img{
 
         height: 4vh;
     }
 
-    .navbar-expand-md navbar-toggler {
-        display: none;
-    }
+    
 
 }

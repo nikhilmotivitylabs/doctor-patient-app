@@ -14,9 +14,9 @@ const Sidebar = () => {
             />
 
             <div className="my-3">
-              <h4>Venkata</h4>
+              <h4>Dr MS Reddy</h4>
 
-              <h5>Cardiology</h5>
+              <h5>Orthopedic</h5>
             </div>
           </div>
           <div className="sidebar-nav">

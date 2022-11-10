@@ -11,7 +11,7 @@ const ApplyAppointment=()=>{
      
            <div className="col-lg-8">
               <div className="card  shadow">
-                 <div className="card-body">
+                 <div className="card-body p-1">
                    <h2 className="text-center">Book Appointment</h2>
              <form>
                <div className="mb-3">

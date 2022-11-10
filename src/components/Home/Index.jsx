@@ -22,7 +22,7 @@ const HomePage = () => {
               </div>
             </div>
             <div className="carousel-item ">
-              <img className="w-100 h-92"
+              <img className="w-100"
                 src="https://static.vecteezy.com/system/resources/thumbnails/006/168/689/small/doctor-working-with-patient-taking-notes-with-clipboard-and-discussing-something-in-his-medical-office-health-care-and-people-concept-photo.jpg"
                 alt="Second slide" />
               <div className="carousel-caption ">

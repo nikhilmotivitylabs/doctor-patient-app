@@ -19,11 +19,12 @@
     .hero-carousel .carousel-item img{
         height: 50vh;
     }
+}
 
-    .hero-carousel .carousel-caption{
-        top:30%;
-        bottom: 30%;
-      
+
+@media only screen and (max-width: 600px) {
+
+    .hero-carousel .carousel-item img{
+        height: 40vh;
     }
-
 }

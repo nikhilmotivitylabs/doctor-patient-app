@@ -10,7 +10,7 @@ const Sidebar = () => {
             <img
               className="image-setting image-fluid rounded-circle"
               src="https://www.york.ac.uk/media/research/2020/covid19/ICU.jpg"
-              alt="not found" 
+              alt="not found"
             />
 
             <div className="my-3">
@@ -22,35 +22,26 @@ const Sidebar = () => {
           <div className="sidebar-nav">
             <ul className="nav nav-pill flex-column mb-auto">
               <li className="nav-item p-1">
-                <NavLink
-                  className="nav-link"
-                  to="/patient/dashboard"
-                >
-                  <i className='bi bi-house-door-fill m-2'></i> Dasboard
+                <NavLink className="nav-link" to="/patient/dashboard">
+                  <i className="bi bi-house-door-fill m-2"></i> Dasboard
                 </NavLink>
               </li>
 
               <li className="nav-item p-1">
-                <NavLink
-                  className="nav-link"
-                
-                  to="/patient/applyappointment"
-                >
+                <NavLink className="nav-link" to="/patient/applyappointment">
+                  <i className="bi bi-calendar-check-fill m-2"></i> Book
+                  Appointment
                 </NavLink>
               </li>
 
               <li className="nav-item p-1">
-                <NavLink
-                  className="nav-link "
-                 
-                  to="/patient/viewstatus"
-                >
-                 <i className='bi bi-list m-2'></i> View Status
+                <NavLink className="nav-link " to="/patient/viewstatus">
+                  <i className="bi bi-list m-2"></i> View Status
                 </NavLink>
               </li>
               <li className="nav-item p-1">
-                <NavLink className="nav-link"  to="/">
-                <i className='bi bi-box-arrow-right m-2'></i> Logout
+                <NavLink className="nav-link" to="/">
+                  <i className="bi bi-box-arrow-right m-2"></i> Logout
                 </NavLink>
               </li>
             </ul>

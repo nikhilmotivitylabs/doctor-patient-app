@@ -7,12 +7,11 @@ const DoctorAppointmentRequest = () => {
       axios.get("http://localhost:5001/users")
       .then((response)=>
       {
-        console.log(response.data)
-        let allSuccessStories = []
+        let allpatientData = []
         if (response.data && response.data.length) {
-          allSuccessStories = response.data
+          allpatientData = response.data
         }
-        setPatientData(allSuccessStories)
+        setPatientData(allpatientData)
       })
       .catch((error) => console.error(`Error:${error}`))
     },[])

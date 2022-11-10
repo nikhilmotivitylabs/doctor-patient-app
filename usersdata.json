@@ -18,5 +18,67 @@
       "patientAge":"23",
       "disease":"bodypain",
       "phNo":"9879438231"
-  }]
+  }],
+  
+  "appointments":[
+
+    {
+
+        "AppointmentId":1,
+
+        "PatientName":"hari",
+
+        "PatientAge":"55",
+
+        "Disease":"fever",
+
+        "PhNo":"55555",
+
+        "Username":"hari",
+
+        "Action":"pending"
+
+    },
+
+    {
+
+      "AppointmentId":2,
+
+      "PatientName":"bhaskar",
+
+      "PatientAge":"55",
+
+      "Disease":"fever",
+
+      "PhNo":"55555",
+
+      "Username":"hari",
+
+      "Action":"pending"
+
+  }
+
+  ,
+
+  {
+
+    "AppointmentId":3,
+
+    "PatientName":"sandep",
+
+    "PatientAge":"55",
+
+    "Disease":"fever",
+
+    "PhNo":"55555",
+
+    "Username":"hari",
+
+    "Action":"pending"
+
+}
+
+
+
+]
 }

@@ -11,7 +11,7 @@ const ApplyAppointment=()=>{
      
            <div className="col-lg-8">
               <div className="card  shadow">
-                 <div className="card-body p-1">
+                 <div className="card-body p-5">
                    <h2 className="text-center">Book Appointment</h2>
              <form>
                <div className="mb-3">
@@ -75,7 +75,7 @@ const ApplyAppointment=()=>{
               </div>
                
               <div className="d-grid  col-6 mx-auto mt-5 mb-3">
-              <button type="submit" onClick={ApplyAppointment} className="btn btn-primary">
+              <button type="submit" onClick={ApplyAppointment} className="btn text-white" style={{backgroundColor:'#EE6F1B',borderColor:'#EE6F1B'}}>
                  Book Appointment
                </button>
               </div>

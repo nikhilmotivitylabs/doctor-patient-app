@@ -1,6 +1,6 @@
 
 .sidebar .profile {
-    border-bottom: 2px solid #000;
+    border-bottom: 10px solid #EE6F1B;
 }
 
 
@@ -19,7 +19,7 @@
 
 }
 .sidebar li .nav-link:hover, .sidebardoc li .nav-link.active{
-    background-color: black;
+    background-color: #EE6F1B;
     color: white;
 
 }

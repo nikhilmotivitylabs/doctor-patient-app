@@ -41,7 +41,7 @@ const Login = () => {
                   />
                 </div>
                <div className="d-grid  col-6 mx-auto mt-5 mb-3">
-               <button type="submit" onClick={onLogin} className="btn btn-primary">
+               <button type="submit" onClick={onLogin} className="btn text-white " style={{backgroundColor: '#EE6F1B', borderColor: '#EE6F1B'}}>
                   Login
                 </button>
                </div>

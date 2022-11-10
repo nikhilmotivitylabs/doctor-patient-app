@@ -36,7 +36,6 @@ const Sidebar = () => {
                 
                   to="/patient/applyappointment"
                 >
-                 <i className='bi bi-calendar-check-fill m-2'></i> Book Appointment
                 </NavLink>
               </li>
 

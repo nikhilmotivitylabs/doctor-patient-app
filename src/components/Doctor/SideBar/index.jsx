@@ -5,7 +5,7 @@ const Sidebar = () => {
   return (
     <>
       <div className="card shadow my-4 sidebar">
-        <div className="card-body">
+        <div className="card-body p-1">
           <div className="profile text-center">
             <img
               className="image-setting w-50 h-30 image-fluid rounded-circle"

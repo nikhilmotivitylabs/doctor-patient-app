@@ -3,8 +3,8 @@ import React from "react";
 const ViewStatus=()=>{
     return(
         <>
-       <div className="view_status mt-4 ">
-        <div className="card mb-4 ">
+        <div className="view_status mt-4 ">
+            <div className="card mb-4 ">
           <div className="card-body  d-sm-block">
             <div className="row ">
               <div className="col-md-12 ">
@@ -44,7 +44,7 @@ const ViewStatus=()=>{
           </div>
         </div>
         </div>
-        </>
+        </> 
     )
 }
 export default ViewStatus

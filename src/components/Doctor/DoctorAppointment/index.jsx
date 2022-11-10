@@ -1,6 +1,27 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import { useState } from "react";
+import axios from 'axios'
 const DoctorAppoitnmentList = () => {
+
+  const[appointmentList,setAppontmentList] =useState([])
+   const[errorcase,setErrorCase] =useState("")
+  
+    useEffect(()=>{
+      const url='http://localhost:5001/appointments'
+      axios.get(url).then((response)=>
+      {
+        let appointments=[]
+        if(response.data && response.data.length)
+        {
+          appointments=response.data
+        }
+        setAppontmentList(appointments)}
+      ).catch((errors)=>{
+        setErrorCase(errors)
+        console.log(`Error : ${errorcase}`)
+      }
+       ) },[])
+  
   return (
     <>
       <div className="appointment_list mt-4 ">
@@ -20,23 +41,24 @@ const DoctorAppoitnmentList = () => {
                     <th scope="col"> Patient Age </th>
                     <th scope="col"> Disease </th>
                     <th scope="col"> Ph No</th>
-                    <th scope="col"> Username </th>
                     <th scope="col"> Action</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td> 1</td>
-                    <td> Otto </td>
-                    <td> 23 </td>
-                    <td> fever </td>
-                    <td> 85787889588</td>
-                    <td> otto123 </td>
+                { appointmentList && appointmentList.length > 0 && (
+               <tbody>
+               { appointmentList.map(appointment => (
+                  <tr key={appointment.AppointmentId}>
+                    <td > {appointment.AppointmentId}</td>
+                    <td> {appointment.PatientName} </td>
+                    <td> {appointment.PatientAge}</td>
+                    <td> {appointment.Disease}</td>
+                    <td> {appointment.PhNo}</td>
+                   
                     <td>
                       <button className="btn btn-danger"> Delete</button>{" "}
                     </td>
-                  </tr>
-                </tbody>
+                  </tr>))}
+                </tbody>)}
               </table>
             </div>
           </div>

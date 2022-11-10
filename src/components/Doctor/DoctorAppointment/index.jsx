@@ -2,25 +2,6 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import axios from 'axios'
 const DoctorAppoitnmentList = () => {
-
-  const[appointmentList,setAppontmentList] =useState([])
-   const[errorcase,setErrorCase] =useState("")
-  
-    useEffect(()=>{
-      const url='http://localhost:5001/appointments'
-      axios.get(url).then((response)=>
-      {
-        let appointments=[]
-        if(response.data && response.data.length)
-        {
-          appointments=response.data
-        }
-        setAppontmentList(appointments)}
-      ).catch((errors)=>{
-        setErrorCase(errors)
-        console.log(`Error : ${errorcase}`)
-      }
-       ) },[])
   
   return (
     <>
@@ -29,7 +10,7 @@ const DoctorAppoitnmentList = () => {
           <div className="card-body  d-sm-block">
             <div className="row ">
               <div className="col-md-12 ">
-                <h2 className="pt-3 pb-4 text-center"> Appointments list </h2>
+                <h2 className="pt-3 pb-4 text-center"> Appointments  </h2>
               </div>
             </div>
             <div className="table-responsive">

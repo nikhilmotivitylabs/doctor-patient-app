@@ -36,7 +36,7 @@ const Sidebar = () => {
                 
                   to="/doctor/appointmentreq"
                 >
-                 <i className='bi bi-calendar-check-fill m-2'></i> AppointmentRequest
+                 <i className='bi bi-calendar-check-fill m-2'></i> Appointment Queue
                 </NavLink>
               </li>
 
@@ -46,7 +46,7 @@ const Sidebar = () => {
                  
                   to="/doctor/appointment"
                 >
-                 <i className='bi bi-list m-2'></i> AppointmentList
+                 <i className='bi bi-list m-2'></i> Appointments
                 </NavLink>
               </li>
               <li className="nav-item p-1">

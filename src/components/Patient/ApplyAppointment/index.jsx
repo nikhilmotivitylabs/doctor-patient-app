@@ -3,13 +3,14 @@ import React from "react";
 const ApplyAppointment=()=>{
     return(
         <>
+
        <section className="doc-login" >
      
      <div className="container">
-       <div className='row d-flex justify-content-center py-5'>
+       <div className='row d-flex justify-content-center my-4'>
      
-           <div className="col-lg-5">
-              <div className="card p-5 shadow">
+           <div className="col-lg-8">
+              <div className="card  shadow">
                  <div className="card-body">
                    <h2 className="text-center">Book Appointment</h2>
              <form>

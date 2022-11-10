@@ -10,23 +10,29 @@ const Footer = () => {
         <div className='container' >
           <div className='row pt-5'>
             <div className='col-lg-3 col-md-6 col-sm-6 col-12'>
-              <Link to="home" className="text-decoration-none"><img className='img w-75 p-3' src='https://eyecarehelpline.com/hospdt/032019/12/186/max.png' alt='logo' /></Link>
+              <Link to="/" className="text-decoration-none"><img className='footerlogo img-fluid w-75 py-3' src='https://motivitylabs.com/wp-content/uploads/elementor/thumbs/logo-prgkor4cuantgaya7ag8ef6zp2tvgjfpld4fltl3e4.png' alt='Motivity' /></Link>
+              <div className='socialmediaicons'>
+                <span className="link"  style={{cursor:'pointer'}} > <i className="socialicons bi bi-facebook " style={{padding:'5px',fontSize:'25px'}}></i></span>
+                <span className="link" style={{cursor:'pointer'}}> <i className="socialicons bi bi-linkedin "  style={{padding:'5px',fontSize:'25px'}} ></i></span>
+                <span className="link" style={{cursor:'pointer'}}> <i className="socialicons bi bi-twitter "  style={{padding:'5px',fontSize:'25px'}}></i></span>
+                <span className="link" style={{cursor:'pointer'}}>  <i className="socialicons bi bi-instagram "  style={{padding:'5px',fontSize:'25px'}} ></i></span>
+                </div>
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-12 '>
 
               <h4>Quick Links</h4>
-              <ul className="list-unstyled">
+              <ul className="quiklinks list-unstyled">
                 <li>
-                  <Link to="home" className="text-decoration-none">Home</Link>
+                  <Link to="home" className="text-decoration-none text-dark">Home</Link>
                 </li>
                 <li>
-                  <Link to="aboutus" className="text-decoration-none">About Us</Link>
+                  <Link to="aboutus" className="text-decoration-none text-dark">About Us</Link>
                 </li>
                 <li>
-                  <Link to="feedback" className="text-decoration-none">Feedback</Link>
+                  <Link to="feedback" className="text-decoration-none text-dark">Feedback</Link>
                 </li>
                 <li>
-                  <Link to="contact" className="text-decoration-none">Contact</Link>
+                  <Link to="contact" className="text-decoration-none text-dark">Contact</Link>
                 </li>
               </ul>
 
@@ -43,30 +49,26 @@ const Footer = () => {
               </address>
             </div>
             <div className='col-lg-3 col-md-6 col-sm-6 col-12'>
-              <div>
+              
                 <h4>Follow Us</h4>
-                <ul className="list-unstyled">
-                  <li>
-                    <p>+91 888-555-4444 / 888-555-6666</p>
+                <ul className="list-unstyled ">
+                <li className="mobileicon bi bi-telephone-fill ">
+                  <span className='mobileicon ml-5'> +91 40 4651 5454</span>
                   </li>
-                  <li>
-                    <Link to="mail">maxhospital@gmail.com</Link>
+                  <li className=" mobileicon bi bi-telephone-fill ">
+                 
+                  <span className='mobileicon ml-5 '> +91 40 4651 541</span>
+                  </li>
+                  <li className="mailicon bi bi-envelope-fill ">
+                    <span className='mobileicon ml-5'><Link to="mail"  className="text-decoration-none  text-dark  "> maxhospital@gmail.com</Link></span>
                   </li>
                 </ul>
-                <p>
-                  Social Media Networks
-                </p>
-                <div className='socialmediaicons'>
-                <span className="link"  style={{cursor:'pointer'}} > <i className="socialicons bi bi-facebook " style={{padding:'5px',fontSize:'25px'}}></i></span>
-                <span className="link" style={{cursor:'pointer'}}> <i className="socialicons bi bi-google "  style={{padding:'5px',fontSize:'25px'}} ></i></span>
-                <span className="link" style={{cursor:'pointer'}}> <i className="socialicons bi bi-twitter "  style={{padding:'5px',fontSize:'25px'}}></i></span>
-                <span className="link" style={{cursor:'pointer'}}>  <i className="socialicons bi bi-instagram "  style={{padding:'5px',fontSize:'25px'}} ></i></span>
-                </div>
-              </div>
+                
+                
             </div>
             <div className=' d-flex justify-content-between py-4 my-4 border-top border-secondary'>
-              <p>Developed and maintained by <Link to="/home" target="_blank">company</Link></p>
-              <p className='copyright d-flex '>Copyright Company Name © 2022. All rights reserved.</p>
+              <p>Developed and maintained by <Link to="/home" className='text-decoration-none text-dark'  target="_blank">Motivity</Link></p>
+              <p className='copyright d-flex  '>Motivity Labs | All Rights Reserved © 2022.</p>
             </div>
           </div>
         </div>

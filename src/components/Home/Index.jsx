@@ -4,6 +4,7 @@ import './Home.css'
 const HomePage = () => {
 
   return (
+
     <>
       <section className='hero-carousel'>
         <div className="container-fluid g-0">

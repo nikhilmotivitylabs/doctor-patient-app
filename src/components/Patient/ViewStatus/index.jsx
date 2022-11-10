@@ -4,8 +4,8 @@ const ViewStatus=()=>{
     return(
         <>
         <div className="view_status mt-4 ">
-            View Status
-        </div>
+       
+       </div>
         </>
     )
 }

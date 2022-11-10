@@ -8,9 +8,9 @@ const Sidebar = () => {
         <div className="card-body">
           <div className="profile text-center">
             <img
-              className="image-setting w-50 h-10 image-fluid rounded-circle"
+              className="image-setting image-fluid rounded-circle"
               src="https://www.york.ac.uk/media/research/2020/covid19/ICU.jpg"
-              alt="not found"
+              alt="not found" 
             />
 
             <div className="my-3">
@@ -36,7 +36,6 @@ const Sidebar = () => {
                 
                   to="/patient/applyappointment"
                 >
-                 <i className='bi bi-calendar-check-fill m-2'></i> BookAppointment
                 </NavLink>
               </li>
 
@@ -46,7 +45,7 @@ const Sidebar = () => {
                  
                   to="/patient/viewstatus"
                 >
-                 <i className='bi bi-list m-2'></i> ViewStatus
+                 <i className='bi bi-list m-2'></i> View Status
                 </NavLink>
               </li>
               <li className="nav-item p-1">

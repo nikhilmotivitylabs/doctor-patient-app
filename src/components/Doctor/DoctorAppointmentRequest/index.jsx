@@ -24,11 +24,11 @@ const DoctorAppointmentRequest = () => {
             <div className="row ">
               <div className="col-md-12 ">
                 <h2 className="pt-3 pb-4 text-center">
-                  Appointments Details
+                  Appointment Queue
                 </h2>
               </div>
             </div>
-            <div className="table-reponsive">
+            <div className="table-responsive">
             <table className="table table-striped table-hover ">
               <thead>
                 <tr>

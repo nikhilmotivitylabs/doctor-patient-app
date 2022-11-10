@@ -8,7 +8,7 @@ const DoctorAppoitnmentList = () => {
           <div className="card-body  d-sm-block">
             <div className="row ">
               <div className="col-md-12 ">
-                <h2 className="pt-3 pb-4 text-center"> Appointments list </h2>
+                <h2 className="pt-3 pb-4 text-center"> Appointments  </h2>
               </div>
             </div>
             <div className="table-responsive">

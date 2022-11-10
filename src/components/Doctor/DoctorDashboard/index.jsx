@@ -1,20 +1,17 @@
-import React from 'react'
+import React from "react";
 
-const doctorDashboard = () => {
+const DoctorDashboard = () => {
   return (
     <>
-    <section>
-         <div className="container mt-4 ">
-          <div className='row'>
-            <div className='col-lg-12'>
-              <h3>Doctor Dashboard</h3>
-            </div>
+      <div className="doc-dashboard mt-4 ">
+        <div className="row">
+          <div className="col-lg-12">
+            <h3>Doctor Dashboard</h3>
           </div>
-
-         </div>
-    </section>
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default doctorDashboard
+export default DoctorDashboard;

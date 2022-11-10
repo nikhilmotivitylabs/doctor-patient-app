@@ -3,9 +3,9 @@ import './Home.css'
 
 const HomePage = () => {
   return (
-
-    <section>
-      <div className="container-fluid">
+<>
+<section className='hero-carousel'>
+      <div className="container-fluid g-0">
         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -42,6 +42,8 @@ const HomePage = () => {
       </div>
 
     </section>
+</>
+   
 
   )
 }

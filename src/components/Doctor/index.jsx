@@ -5,7 +5,8 @@ import Sidebar from './SideBar'
 const Doctor = () => {
   return (
     <>
-      <div className='container'>
+    <section>
+    <div className='container'>
         <div className='row'>
           <div className='col-lg-3'>
             <Sidebar/>
@@ -15,6 +16,8 @@ const Doctor = () => {
           </div>
         </div>
       </div>
+    </section>
+ 
 
     </>
   )

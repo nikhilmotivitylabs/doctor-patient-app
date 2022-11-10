@@ -1,52 +1,52 @@
-import React from 'react'
+import React from "react";
 
-const doctorAppointmentRequest = () => {
+const DoctorAppointmentRequest = () => {
   return (
     <>
-      <section>
-        <div>
-          <div className="container mt-4 ">
-            <div className="card mb-4 ">
-              <div className="card-body overflow-auto d-sm-block">
-                <div className="row ">
-                  <div className="col-md-12 ">
-                    <h2 className="pt-3 pb-4 text-center font-bold font-up deep-purple-text"> Appointments Details </h2>
-                   
-                  </div>
-                </div>
-                <table className="table table-hover ">
-                  <thead>
-                    <tr>
-                      <th> Appointment Id</th>
-                      <th> Patient Name </th>
-                      <th> Patient Age </th>
-                      <th> Disease </th>
-                      <th> Ph No</th>
-                      <th> Username </th>
-                      <th> Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className='col'>
-                      <td> MarkaksdjgfladgskfjlF </td>
-                      <td> Otto </td>
-                      <td> @mdo </td>
-                      <td> @mdo </td>
-                      <td> @mdo </td>
-                      <td> @mdo </td>
-                      <td><button className='btn btn-success hover'> accept</button> </td>
-                    </tr>
-
-                  </tbody>
-                </table>
-
+      <div className="appointment_req mt-4 ">
+        <div className="card mb-4 ">
+          <div className="card-body  d-sm-block">
+            <div className="row ">
+              <div className="col-md-12 ">
+                <h2 className="pt-3 pb-4 text-center">
+                  Appointments Details
+                </h2>
               </div>
             </div>
+            <div className="table-reponsive">
+            <table className="table table-striped table-hover ">
+              <thead>
+                <tr>
+                  <th scope="col"> Appointment Id</th>
+                  <th scope="col"> Patient Name </th>
+                  <th scope="col"> Patient Age </th>
+                  <th scope="col"> Disease </th>
+                  <th scope="col"> Ph No</th>
+                  <th scope="col"> Username </th>
+                  <th scope="col"> Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> 1</td>
+                  <td> Otto </td>
+                  <td> 20 </td>
+                  <td> heart-attack </td>
+                  <td> 9573133220 </td>
+                  <td> otto123 </td>
+                  <td>
+                    <button className="btn btn-success hover"> accept</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            
           </div>
         </div>
-      </section>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default doctorAppointmentRequest
+export default DoctorAppointmentRequest;

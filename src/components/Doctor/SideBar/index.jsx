@@ -1,7 +1,5 @@
 import React from "react";
-
 import { NavLink } from "react-router-dom";
-
 import "./sidebar.css";
 const Sidebar = () => {
   return (
@@ -26,35 +24,34 @@ const Sidebar = () => {
               <li className="nav-item p-1">
                 <NavLink
                   className="nav-link"
-                  aria-current="page"
                   to="/doctor/dashboard"
                 >
-                  Dasboard
+                  <i className='bi bi-house-door-fill m-2'></i> Dasboard
                 </NavLink>
               </li>
 
               <li className="nav-item p-1">
                 <NavLink
                   className="nav-link"
-                  aria-current="page"
+                
                   to="/doctor/appointmentreq"
                 >
-                  AppointmentRequest
+                 <i className='bi bi-calendar-check-fill m-2'></i> AppointmentRequest
                 </NavLink>
               </li>
 
               <li className="nav-item p-1">
                 <NavLink
                   className="nav-link "
-                  aria-current="page"
+                 
                   to="/doctor/appointment"
                 >
-                  AppointmentList
+                 <i className='bi bi-list m-2'></i> AppointmentList
                 </NavLink>
               </li>
               <li className="nav-item p-1">
-                <NavLink className="nav-link" aria-current="page" to="/">
-                  Logout
+                <NavLink className="nav-link"  to="/">
+                <i className='bi bi-box-arrow-right m-2'></i> Logout
                 </NavLink>
               </li>
             </ul>

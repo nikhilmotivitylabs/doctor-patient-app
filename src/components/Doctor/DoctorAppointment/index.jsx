@@ -1,7 +1,7 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import { useState } from "react";
+import axios from 'axios'
 const DoctorAppoitnmentList = () => {
-
   
   return (
     <>
@@ -22,23 +22,24 @@ const DoctorAppoitnmentList = () => {
                     <th scope="col"> Patient Age </th>
                     <th scope="col"> Disease </th>
                     <th scope="col"> Ph No</th>
-                    <th scope="col"> Username </th>
                     <th scope="col"> Action</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td> 1</td>
-                    <td> Otto </td>
-                    <td> 23 </td>
-                    <td> fever </td>
-                    <td> 85787889588</td>
-                    <td> otto123 </td>
+                { appointmentList && appointmentList.length > 0 && (
+               <tbody>
+               { appointmentList.map(appointment => (
+                  <tr key={appointment.AppointmentId}>
+                    <td > {appointment.AppointmentId}</td>
+                    <td> {appointment.PatientName} </td>
+                    <td> {appointment.PatientAge}</td>
+                    <td> {appointment.Disease}</td>
+                    <td> {appointment.PhNo}</td>
+                   
                     <td>
                       <button className="btn btn-danger"> Delete</button>{" "}
                     </td>
-                  </tr>
-                </tbody>
+                  </tr>))}
+                </tbody>)}
               </table>
             </div>
           </div>

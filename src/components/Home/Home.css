@@ -1,7 +1,7 @@
-hero-carousel .carousel-item img{
+.hero-carousel .carousel-item img{
     height: 92vh;
 }
-hero-carousel .carousel-caption{
+.hero-carousel .carousel-caption{
     top: 0;
     left: 0;
     right: 0;
@@ -16,21 +16,14 @@ hero-carousel .carousel-caption{
 
 @media only screen and (max-width: 768px) {
 
-    hero-carousel .carousel-item img{
+    .hero-carousel .carousel-item img{
         height: 50vh;
     }
 
-    hero-carousel .carousel-caption{
+    .hero-carousel .carousel-caption{
         top:30%;
-        right: 0%;
-        left: 0%;
         bottom: 30%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, .5);
-        z-index: 1;
+      
     }
 
 }

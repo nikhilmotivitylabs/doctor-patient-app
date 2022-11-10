@@ -6,7 +6,7 @@ const Sidebar = () => {
     <>
       <div className="card shadow my-4 sidebar">
         <div className="card-body p-1">
-          <div className="profile text-center">
+          <div className="profile text-center mt-3">
             <img
               className="image-setting image-fluid rounded-circle"
               src="https://www.york.ac.uk/media/research/2020/covid19/ICU.jpg"
@@ -16,7 +16,7 @@ const Sidebar = () => {
             <div className="my-3">
               <h4>Veera</h4>
 
-              <h5>problem : heart</h5>
+              <h5>Hyderabad</h5>
             </div>
           </div>
           <div className="sidebar-nav">

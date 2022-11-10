@@ -1,0 +1,22 @@
+{
+  "users":[{
+      "appointmentId":1,
+      "patientName":"sandeep",
+      "patientAge":"24",
+      "disease":"fever",
+      "phNo":"9573133220"
+  },{
+      "appointmentId":2,
+      "patientName":"hari",
+      "patientAge":"22",
+      "disease":"cold",
+      "phNo":"8142490340"
+  },
+  {
+      "appointmentId":3,
+      "patientName":"satya",
+      "patientAge":"23",
+      "disease":"bodypain",
+      "phNo":"9879438231"
+  }]
+}

@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 const DoctorAppointmentRequest = () => {
+  const[patientData,setPatientData]=useState([]);
+    useEffect(()=>{
+      axios.get("http://localhost:5001/users")
+      .then((response)=>
+      {
+        console.log(response.data)
+        let allSuccessStories = []
+        if (response.data && response.data.length) {
+          allSuccessStories = response.data
+        }
+        setPatientData(allSuccessStories)
+      })
+      .catch((error) => console.error(`Error:${error}`))
+    },[])
   return (
     <>
-      <div className="appointment_req mt-4 ">
+      <div className="appointment_req mt-4">
         <div className="card mb-4 ">
           <div className="card-body  d-sm-block">
             <div className="row ">
@@ -22,23 +37,25 @@ const DoctorAppointmentRequest = () => {
                   <th scope="col"> Patient Age </th>
                   <th scope="col"> Disease </th>
                   <th scope="col"> Ph No</th>
-                  <th scope="col"> Username </th>
                   <th scope="col"> Action</th>
                 </tr>
               </thead>
+              {patientData && patientData.length > 0 && (
               <tbody>
-                <tr>
-                  <td> 1</td>
-                  <td> Otto </td>
-                  <td> 20 </td>
-                  <td> heart-attack </td>
-                  <td> 9573133220 </td>
-                  <td> otto123 </td>
+                {
+                   patientData.map(user => (
+                  <tr key={user.appointmentId}>
+                  <td> {user.appointmentId}</td>
+                  <td> {user.patientName}</td>
+                  <td> {user.patientAge}</td>
+                  <td> {user.disease} </td>
+                  <td> {user.phNo} </td>
                   <td>
                     <button className="btn btn-success hover"> accept</button>
                   </td>
-                </tr>
-              </tbody>
+                </tr>))
+                }
+              </tbody>)}
             </table>
             </div>
             

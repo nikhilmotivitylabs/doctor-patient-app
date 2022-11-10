@@ -6,8 +6,8 @@ const TopBar = () => {
     <>
       <nav className="navbar navbar-expand-md bg-light shadow">
         <div className="container">
-          <NavLink className="navbar-brand" to="/">
-            Navbar
+          <NavLink className="navbar-brand icon" to="/">
+            <img src="https://motivitylabs.com/wp-content/uploads/elementor/thumbs/logo-prgkor4cuantgaya7ag8ef6zp2tvgjfpld4fltl3e4.png" className="w-10 h-2" alt="icon"/>
           </NavLink>
           <button
             className="navbar-toggler"

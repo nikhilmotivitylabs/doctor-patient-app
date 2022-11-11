@@ -10,9 +10,9 @@ const Login = () => {
   }
   return (
     <>
-       <section className="doc-login">
+       <section className="doc-login px-2">
      
-      <div className="container px-2">
+      <div className="container">
         <div className='row d-flex justify-content-center py-5' style={{border:'1px solid rgba(0,0,0,0.2)',borderRadius:'20px'}}>
             <div className="col-lg-5 col-md-6 col-sm-6 col-12 login-left">
               <img src={login} className="img-fluid"/>

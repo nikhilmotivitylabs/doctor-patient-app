@@ -4,11 +4,11 @@ import "./sidebar.css";
 const Sidebar = () => {
   return (
     <>
-      <div className="card shadow my-4 sidebar">
+      <div className="card shadow my-4 sidebar-doc">
         <div className="card-body p-1">
           <div className="profile text-center">
             <img
-              className="image-setting w-50 h-30 image-fluid rounded-circle"
+              className="img-fluid  rounded-circle"
               src="https://media.istockphoto.com/id/177373093/photo/indian-male-doctor.jpg?s=612x612&w=0&k=20&c=5FkfKdCYERkAg65cQtdqeO_D0JMv6vrEdPw3mX1Lkfg="
               alt="not found"
             />
@@ -16,7 +16,7 @@ const Sidebar = () => {
             <div className="my-3">
               <h4>Dr MS Reddy</h4>
 
-              <h5>Orthopedic</h5>
+              <p className="text-muted">Orthopedic</p>
             </div>
           </div>
           <div className="sidebar-nav">

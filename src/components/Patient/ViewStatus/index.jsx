@@ -1,5 +1,6 @@
 import React, {useState,useEffect  } from "react";
 import axios from "axios";
+import "./viewStatus.css"
 
 const ViewStatus=()=>{
   const[appiontmentstatus,setappiontmentstatus]=useState([]);
@@ -22,20 +23,22 @@ const ViewStatus=()=>{
           <div className="card-body  d-sm-block">
             <div className="row ">
               <div className="col-md-12 ">
-                <h2 className="pt-3 pb-4 text-center"> Appointment Status </h2>
+                <h4 className="pt-3 pb-4 ">
+                  <span style={{color:"#EE6F1B"}}>Appointment</span>  Status </h4>
+
               </div>
             </div>
             <div className="table-responsive">
               <table className="table table-striped table-hover ">
                 <thead>
                   <tr>
-                    <th scope="col"> App_Id</th>
+                    <th scope="col"> # </th>
                     <th scope="col"> Patient Name </th>
-                    <th scope="col"> Doctor Name </th>
-                    <th scope="col"> Disease </th>
-                    <th scope="col"> Dr Ph No</th>
-                    <th scope="col"> App_Date </th>
-                    <th scope="col"> App_Time</th>
+                    <th scope="col"> Patient Age </th>
+                    <th scope="col"> Health Issue </th>
+                    <th scope="col"> Mobile No</th>
+                    <th scope="col"> Date </th>
+                    <th scope="col"> Time</th>
                     <th scope="col"> Status</th>
                   </tr>
                 </thead>
@@ -51,7 +54,15 @@ const ViewStatus=()=>{
                     <td> {user.drPhNo}</td>
                     <td>{user.app_Date}</td>
                     <td>{user.app_Time} </td>
-                    <td style={{color:"orange",fontWeight:'bold'}}>{user.status}</td>
+                    <td>
+                        <span style={{
+                      color:"#EE6F1B",
+                      fontWeight:'bold', 
+                       border: "2px solid #EE6F1B",
+                       padding:'3px'
+                       
+                       }}>{user.status}</span>
+                        </td>
                     </tr>))
                 }
               </tbody>)}

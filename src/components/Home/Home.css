@@ -1,3 +1,7 @@
+.hero-carousel{
+    padding: 0;
+}
+
 .hero-carousel .carousel-item img{
     height: 92vh;
 }

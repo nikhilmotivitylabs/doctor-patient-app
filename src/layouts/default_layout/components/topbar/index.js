@@ -38,6 +38,15 @@ const TopBar = () => {
                   Login
                 </NavLink>
               </li>
+              <li className="nav-item mx-4">
+                <NavLink
+                  className="nav-link text-light"
+  
+                  to='/patient/applyappointment'
+                >
+                  Patient
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>

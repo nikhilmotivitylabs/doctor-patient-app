@@ -7,10 +7,21 @@ const ErrorPage = () => {
     <>
     <section>
         <div className='container'>
-            <div className='row'>
-            <div className='col-lg-12 text-center'>
-                <img src={error} alt='error' className='img-fluid' style={{ marginBlock: "100px" }}  />
+            <div className='row d-flex justify-content-center align-items-center'>
+            <div className='col-lg-6 text-center'>
+              <div className='mb-3'>
+
+              <img src={error} alt='error' className='img-fluid'  />
+              </div>
+              <div className='w-100 h-100'>
+                <p className=''>This page can't be be found!</p>
+                <button className='btn btn-dark'>Back to Home</button>
+              
+              </div> 
+                
             </div>
+           
+         
             </div>
 
         </div>

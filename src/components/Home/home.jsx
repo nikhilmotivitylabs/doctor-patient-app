@@ -60,7 +60,7 @@ const HomePage = () => {
 
 
           
-                  <div className='row'>
+                  <div className='row d-flex text-center'>
                     <div className='col-lg-4 col-md-6 g-5'>
                     <div class="card">
                         <div class="card-body">

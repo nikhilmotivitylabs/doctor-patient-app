@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import login from '../../assets/login.png'
+import './login.css'
 
 const Login = () => {
   const navigate = useNavigate()
@@ -11,11 +13,13 @@ const Login = () => {
        <section className="doc-login">
      
       <div className="container">
-        <div className='row d-flex justify-content-center py-5'>
-      
-            <div className="col-lg-4">
-               <div className="card p-5 shadow">
-                  <div className="card-body">
+        <div className='row d-flex justify-content-center py-5' style={{border:'1px solid rgba(0,0,0,0.2)',borderRadius:'20px'}}>
+            <div className="col-lg-5 col-md-6 col-sm-6 col-12 login-left">
+              <img src={login} className="img-fluid"/>
+            </div>
+            <div className="col-lg-5 col-md-6 col-sm-6 col-12login-right">
+               <div className="p-5">
+                  <div className="">
                     <h2 className="text-center">Login</h2>
               <form>
                 <div className="mb-3">

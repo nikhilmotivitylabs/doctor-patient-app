@@ -26,7 +26,7 @@ const Sidebar = () => {
                   className="nav-link"
                   to="/doctor/dashboard"
                 >
-                  <i className='bi bi-house-door-fill m-2'></i> Dasboard
+                  <i className='bi bi-house-door-fill m-2'></i> Dashboard
                 </NavLink>
               </li>
 

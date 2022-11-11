@@ -1,5 +1,11 @@
 import React from 'react'
 import './Home.css'
+import cardio from '../../assets/cardiology.png'
+import gasteo from '../../assets/gastroenterology.png'
+import onology from '../../assets/oncology.png'
+import neph from '../../assets/nephrology.png'
+import neuro from '../../assets/neuro_surgery.png'
+import ortho from '../../assets/heart.png'
 
 const HomePage = () => {
 
@@ -41,6 +47,93 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+        </div>
+
+      </section>
+      <section className='services'>
+        <div className='container'>
+          <div className='services-title text-center'>
+            <h2>Services</h2>
+             
+
+          </div>
+
+
+          
+                  <div className='row'>
+                    <div className='col-lg-4 col-md-6 g-5'>
+                    <div class="card">
+                        <div class="card-body">
+                        <img src={cardio}/>
+                          <h4 class="card-title" style={{color:"#EE6F1B"}}>Cardiology</h4>
+                          <p class="card-subtitle mb-0 text-muted" style={{color:"#0000"}}>Heart</p>
+                          
+                          
+                        </div>
+                   </div>
+                    </div>
+
+                    <div className='col-lg-4 col-md-6 g-5'>
+                    <div class="card">
+                        <div class="card-body">
+                          <img src={onology}/>
+                          <h4 class="card-title" style={{color:"#EE6F1B"}}>Oncology</h4>
+                          <p class="card-subtitle mb-0 text-muted">Cancer</p>
+
+                          
+                        </div>
+                   </div>
+                    </div>
+                     
+                    <div className='col-lg-4 col-md-6 g-5 '>
+                    <div class="card">
+                        <div class="card-body">
+                          <img src={neph}/>
+                          <h4 class="card-title" style={{color:"#EE6F1B"}}>Nephrology</h4>
+                          <p class="card-subtitle mb-0 text-muted">Kidneys</p>
+                          
+                        </div>
+                   </div>
+                    </div>
+
+                    <div className='col-lg-4 col-md-6 g-5' >
+                    <div class="card">
+                        <div class="card-body">
+                           <img src={ortho}/>
+                          <h4 class="card-title" style={{color:"#EE6F1B"}}>Orthopaedics</h4>
+                          <p class="card-subtitle mb-0 text-muted">Muscles</p>
+                          
+                        </div>
+                   </div>
+                    </div>
+
+                    <div className='col-lg-4 col-md-6 g-5'>
+                    <div class="card">
+                        <div class="card-body">
+                        <img src={neuro}/>
+                          <h4 class="card-title" style={{color:"#EE6F1B"}}>Neurology</h4>
+                          <p class="card-subtitle mb-0 text-muted">Nerves</p>
+                          
+                        </div>
+                   </div>
+                    </div>
+
+                    <div className='col-lg-4 col-md-6 g-5'>
+                    <div class="card">
+                        <div class="card-body">
+                           <img src={gasteo}/>
+                          <h4 class="card-title" style={{color:"#EE6F1B"}}>Gastroenterology</h4>
+                          <p class="card-subtitle mb-0 text-muted">Digestive System</p>
+
+                          
+                        </div>
+                   </div>
+                    </div>
+                    
+
+                  </div>
+
+                
         </div>
 
       </section>

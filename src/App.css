@@ -1,3 +1,23 @@
-section{
+body {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: normal;
+  /*background: #f4f4f4;*/
+  padding-top: 70px;
+}
+
+section {
   padding: 50px 0;
+}
+
+.btn-theme {
+  background-color: rgb(238, 111, 27);
+
+  border-color: rgb(238, 111, 27);
+}
+
+.btn-theme:hover {
+  background-color: rgb(238, 111, 27);
+
+  border-color: rgb(238, 111, 27);
 }

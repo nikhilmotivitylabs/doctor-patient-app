@@ -5,7 +5,7 @@ const TopBar = () => {
   
   return (
     <>
-      <nav className="navbar navbar-expand-md bg-dark shadow">
+      <nav className="navbar navbar-expand-md bg-dark shadow fixed-top">
         <div className="container">
           <NavLink className="navbar-brand " to="/">
             <img src="https://motivitylabs.com/wp-content/uploads/elementor/thumbs/logo-prgkor4cuantgaya7ag8ef6zp2tvgjfpld4fltl3e4.png" className="" alt="icon"/>

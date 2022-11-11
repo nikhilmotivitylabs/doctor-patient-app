@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import error from "../../assets/error_page.png"
 
 const ErrorPage = () => {
@@ -15,7 +16,11 @@ const ErrorPage = () => {
               </div>
               <div className='w-100 h-100'>
                 <p className=''>This page can't be be found!</p>
-                <button className='btn btn-dark'>Back to Home</button>
+                <NavLink className='btn btn-theme' to='/'>
+
+                  Back to Home
+
+                </NavLink>
               
               </div> 
                 

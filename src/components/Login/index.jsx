@@ -1,12 +1,29 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import login from '../../assets/login.png'
 import './login.css'
+import axios from "axios";
+
 
 const Login = () => {
   const navigate = useNavigate()
-  const onLogin = ()=>{
-    navigate("/doctor/dashboard")
+  const [doctor,setDoctor] = useState({email:"", password:""})
+  useEffect(()=>{
+   
+  })
+  const onLogin = (event)=>{
+    let baseURL = "http://localhost:8080/"
+    event.preventDefault()
+    axios.post(baseURL+"doctorlogin",{email:doctor.email,password:doctor.password}).then(response=>{
+      let doc = response.data
+      localStorage.setItem("doctor",JSON.stringify(doc))
+      return (doc.email===doctor.email?navigate("/doctor/dashboard"):navigate("/login"))
+    }).catch(error=>{
+      navigate("/logins")
+    })
+  }
+  const handleChange=(event)=>{
+    setDoctor({...doctor,[event.target.name]:event.target.value})
   }
   return (
     <>
@@ -28,6 +45,8 @@ const Login = () => {
                   </label>
                   <input
                     type="email"
+                    name="email"
+                    onChange={handleChange}
                     className="form-control"
                     id="email"
                     aria-describedby="emailHelp"
@@ -39,6 +58,8 @@ const Login = () => {
                     Password
                   </label>
                   <input
+                    name="password"
+                    onChange={handleChange}
                     type="password"
                     className="form-control"
                     id="password"

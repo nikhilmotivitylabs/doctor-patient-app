@@ -1,7 +1,9 @@
 import React from "react"
+import Doctor from ".."
 import "./dashboard.css"
 
 const DoctorDashboard = () => {
+  let doctor = JSON.parse(localStorage.getItem("doctor"))
   return (
     <>
       <div className='doc-dashboard mt-4'>
@@ -19,9 +21,9 @@ const DoctorDashboard = () => {
                 </div>
                 <div>
                   <h4 className='mt-4'>
-                    <strong>Dr MS Reddy</strong>
+                    <strong> DR. {doctor.firstname} {doctor.lastname}</strong>
                   </h4>
-                  <span className='text-muted'>Orthopedic</span>
+                  <span className='text-muted'>{doctor.department}</span>
                   <p className='mt-1'>Apollo Hospital, Hyderabad</p>
                 </div>
                 <div className='socialmedia_icons'>
@@ -123,7 +125,7 @@ const DoctorDashboard = () => {
                 <ul className='list-unstyled'>
                   <li>
                     <p>
-                      <strong>Experience:</strong> 18 Years
+                      <strong>Experience:</strong> {doctor.exp} years
                     </p>
                   </li>
                   <li>

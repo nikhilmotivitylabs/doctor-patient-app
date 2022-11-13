@@ -1,7 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./sidebar.css";
+import { useNavigate } from "react-router-dom";
+
 const Sidebar = () => {
+  let navigate = useNavigate()
+  let doctor = JSON.parse(localStorage.getItem("doctor"))
+  const handleLogout = ()=>{
+    localStorage.clear("doctor")
+    localStorage.clear(doctor)
+    localStorage.removeItem("doctor")
+    navigate("/")
+  }
   return (
     <>
       <div className="card shadow my-4 sidebar-doc">
@@ -14,9 +24,9 @@ const Sidebar = () => {
             />
 
             <div className="my-3">
-              <h4>Dr MS Reddy</h4>
+              <h4>DR. {doctor.firstname} {doctor.lastname}</h4>
 
-              <p className="text-muted">Orthopedic</p>
+              <p className="text-muted">{doctor.department}</p>
             </div>
           </div>
           <div className="sidebar-nav">
@@ -51,7 +61,7 @@ const Sidebar = () => {
               </li>
               <li className="nav-item p-1">
                 <NavLink className="nav-link"  to="/">
-                <i className='bi bi-box-arrow-right m-2'></i> Logout
+                <i onClick={handleLogout} className='bi bi-box-arrow-right m-2'></i> Logout
                 </NavLink>
               </li>
             </ul>

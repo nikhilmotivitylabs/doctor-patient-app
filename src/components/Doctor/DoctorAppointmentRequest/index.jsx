@@ -3,18 +3,40 @@ import axios from "axios";
 
 const DoctorAppointmentRequest = () => {
   const[patientData,setPatientData]=useState([]);
-    useEffect(()=>{
-      axios.get("http://localhost:5001/users")
-      .then((response)=>
-      {
-        let allpatientData = []
+  // let doctor = localStorage.getItem("doctor")
+  // let baseURL = localStorage.getItem("baseURL")
+  //   useEffect(()=>{
+  //     axios.post(baseURL+"showAppointments",doctor)
+  //     .then((response)=>
+  //     {
+  //       let allpatientData = []
+        
+  //       if (response.data && response.data.length) {
+  //         allpatientData = response.data
+  //       }
+  //       localStorage.setItem("appointmentsList",response.data)
+  //       setPatientData(allpatientData)
+
+  //     })
+  //     .catch((error) => console.error(`Error:${error}`))
+  //   },[])
+  useEffect(()=>{
+    let doctor = JSON.parse(localStorage.getItem("doctor"))
+    let baseURL = localStorage.getItem("baseURL")
+    axios.post(baseURL+"showAppointments",doctor).then((response)=>{
+      let allpatientData = []
+        
         if (response.data && response.data.length) {
           allpatientData = response.data
         }
+        
         setPatientData(allpatientData)
-      })
-      .catch((error) => console.error(`Error:${error}`))
-    },[])
+      let appointmentList = response.data;
+      localStorage.setItem("appointmentList",JSON.stringify(appointmentList))
+    }).catch(()=>{
+      console.log("appointments list error")
+    })
+  },[])
   return (
     <>
       <div className="appointment_req mt-4">
@@ -47,8 +69,8 @@ const DoctorAppointmentRequest = () => {
                   <td> {user.appointmentId}</td>
                   <td> {user.patientName}</td>
                   <td> {user.patientAge}</td>
-                  <td> {user.disease} </td>
-                  <td> {user.phNo} </td>
+                  <td> {user.problem} </td>
+                  <td> {user.patientPhoneNo} </td>
                   <td>
                     <button className="btn btn-success hover"> accept</button>
                   </td>

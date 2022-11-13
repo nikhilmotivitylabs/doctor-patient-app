@@ -14,6 +14,7 @@ import PatientDashboard from "./components/Patient/Dashboard"
 import PatientApplyAppointment from "./components/Patient/ApplyAppointment"
 import PatientViewStatus from "./components/Patient/ViewStatus"
 import Error from './components/Error'
+import DoctorProtectedRoutes from "./ProtectedRoutes/DoctorProtectedRoutes"
 
 const App = () => (
   <>
@@ -21,11 +22,12 @@ const App = () => (
         <Route path='/' element={<DefaultLayout/>}>
           <Route index element={<HomePage />} />
           <Route path='login' element={<Login/>}/>
+          <Route element={<DoctorProtectedRoutes/>}>
           <Route path='doctor' element={<Doctor/>}>
             <Route path='dashboard' element={<DoctorDashboard/>}/>
             <Route path='appointmentreq' element={<DoctorAppointmentRequest/>}/>
             <Route path='appointment' element={<DoctorAppointment/>}/>
-          </Route>
+          </Route></Route>
           <Route path='patient' element={<Patient/>}>
             <Route path='dashboard' element={<PatientDashboard/>}/>
             <Route path="applyappointment" element={<PatientApplyAppointment/>}/>

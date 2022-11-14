@@ -33,7 +33,7 @@ const TopBar = () => {
                 <NavLink
                   className="nav-link text-light"
   
-                  to="/login"
+                  to="/doctorlogin"
                 >
                   Doctor
                 </NavLink>
@@ -42,7 +42,7 @@ const TopBar = () => {
                 <NavLink
                   className="nav-link text-light"
   
-                  to='/patientregister'
+                  to='/patientlogin'
                 >
                   Patient
                 </NavLink>

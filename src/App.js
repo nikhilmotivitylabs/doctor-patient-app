@@ -4,8 +4,10 @@ import "./App.css"
 import { Routes, Route } from "react-router-dom"
 import DefaultLayout from "./layouts/default_layout"
 import HomePage from "./components/Home/home"
-import Login from "./components/Login"
-import PatientRegistration from "./components/PatientRegister"
+import DoctorLogin from "./components/DoctorAuth/DoctorLogin"
+import DoctorRegister from "./components/DoctorAuth/DoctorRegister"
+import PatientLogin from "./components/PatientAuth/PatientLogin"
+import PatientRegister from "./components/PatientAuth/PatientRegister"
 import Doctor from "./components/Doctor"
 import DoctorDashboard from "./components/Doctor/DoctorDashboard"
 import DoctorAppointmentRequest from "./components/Doctor/DoctorAppointmentRequest"
@@ -22,8 +24,14 @@ const App = () => (
       <Routes>
         <Route path='/' element={<DefaultLayout/>}>
           <Route index element={<HomePage />} />
-          <Route path='login' element={<Login/>}/>
-          <Route path="patientregister" element={<PatientRegistration/>}/>
+
+          <Route path ='doctorlogin' element={<DoctorLogin/>}/>
+          <Route path='doctorregister' element ={<DoctorRegister/>}/>
+
+          <Route path ='patientlogin' element={<PatientLogin/>}/>
+          <Route path='patientregister' element ={<PatientRegister/>}/>
+
+          
           <Route path='doctor' element={<Doctor/>}>
             <Route path='dashboard' element={<DoctorDashboard/>}/>
             <Route path='appointmentreq' element={<DoctorAppointmentRequest/>}/>

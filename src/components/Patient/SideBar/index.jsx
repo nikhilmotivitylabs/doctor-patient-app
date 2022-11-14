@@ -22,11 +22,7 @@ const Sidebar = () => {
           </div>
           <div className="sidebar-nav">
             <ul className="nav nav-pill flex-column mb-auto">
-              {/* <li className="nav-item p-1">
-                <NavLink className="nav-link" to="/patient/dashboard">
-                  <i className="bi bi-house-door-fill m-2"></i> Dasboard
-                </NavLink>
-              </li> */}
+               
 
               <li className="nav-item p-1">
                 <NavLink className="nav-link" to="/patient/applyappointment">

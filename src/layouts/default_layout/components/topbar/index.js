@@ -35,14 +35,14 @@ const TopBar = () => {
   
                   to="/login"
                 >
-                  Login
+                  Doctor
                 </NavLink>
               </li>
               <li className="nav-item mx-4">
                 <NavLink
                   className="nav-link text-light"
   
-                  to='/patient/applyappointment'
+                  to='/patientregister'
                 >
                   Patient
                 </NavLink>

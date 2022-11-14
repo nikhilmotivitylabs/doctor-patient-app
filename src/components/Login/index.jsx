@@ -1,29 +1,12 @@
-import React,{useState,useEffect} from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import login from '../../assets/login.png'
 import './login.css'
-import axios from "axios";
-
 
 const Login = () => {
   const navigate = useNavigate()
-  const [doctor,setDoctor] = useState({email:"", password:""})
-  useEffect(()=>{
-   
-  })
-  const onLogin = (event)=>{
-    let baseURL = "http://localhost:8080/"
-    event.preventDefault()
-    axios.post(baseURL+"doctorlogin",{email:doctor.email,password:doctor.password}).then(response=>{
-      let doc = response.data
-      localStorage.setItem("doctor",JSON.stringify(doc))
-      return (doc.email===doctor.email?navigate("/doctor/dashboard"):navigate("/login"))
-    }).catch(error=>{
-      navigate("/logins")
-    })
-  }
-  const handleChange=(event)=>{
-    setDoctor({...doctor,[event.target.name]:event.target.value})
+  const onLogin = ()=>{
+    navigate("/doctor/dashboard")
   }
   return (
     <>
@@ -40,28 +23,26 @@ const Login = () => {
                     <h2 className="text-center">Login</h2>
               <form>
                 <div className="mb-3">
-                  <label for="email" className="form-label">
+                  <label htmlFor="email" className="form-label">
                     Email
                   </label>
                   <input
                     type="email"
-                    name="email"
-                    onChange={handleChange}
                     className="form-control"
                     id="email"
+                    placeholder="Enter Your Email"
                     aria-describedby="emailHelp"
                   />
                   
                 </div>
                 <div className="mb-3">
-                  <label for="password" className="form-label">
+                  <label htmlFor="password" className="form-label">
                     Password
                   </label>
                   <input
-                    name="password"
-                    onChange={handleChange}
                     type="password"
                     className="form-control"
+                    placeholder="Enter Your Password"
                     id="password"
                   />
                 </div>
